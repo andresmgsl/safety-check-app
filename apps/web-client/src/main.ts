@@ -5,6 +5,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { provideWalletAdapter } from '@heavy-duty/wallet-adapter';
+import { BackpackWalletAdapter } from '@solana/wallet-adapter-backpack';
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-phantom';
 import { SolflareWalletAdapter } from '@solana/wallet-adapter-solflare';
 import { AppComponent } from './app/app.component';
@@ -42,7 +43,7 @@ bootstrapApplication(AppComponent, {
     ),
     provideWalletAdapter({
       autoConnect: true,
-      adapters: [new PhantomWalletAdapter(), new SolflareWalletAdapter()],
+      adapters: [new BackpackWalletAdapter(), new PhantomWalletAdapter(), new SolflareWalletAdapter()],
     }),
   ],
 }).catch((err) => console.error(err));

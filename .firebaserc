@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "heavy-duty-utils"
+  },
+  "targets": {
+    "heavy-duty-utils": {
+      "hosting": {
+        "safety-check": [
+          "safety-check"
+        ]
+      }
+    }
+  }
+}

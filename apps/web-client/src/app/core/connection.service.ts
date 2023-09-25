@@ -4,11 +4,11 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({ providedIn: 'root' })
 export class ConnectionService {
   private readonly _rpcEndpoint = new BehaviorSubject(
-    localStorage.getItem('rpcEndpoint') ?? 'http://localhost:8899'
+    localStorage.getItem('rpcEndpoint') ?? 'https://rpc.heavyduty.builders'
   );
   private readonly _programId = new BehaviorSubject(
     localStorage.getItem('programId') ??
-      '7ZBuLscAVnc4mjJ6JKYdyh8JtzWgdg7ds7M8vUPfzteR'
+    '52pYVuqpERBeQExxC3GnPFrLSbCS4GsJTmwRCmGwMJWY'
   );
 
   readonly rpcEndpoint$ = this._rpcEndpoint.asObservable();

@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "safety-check",
+      "public": "dist/apps/web-client",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

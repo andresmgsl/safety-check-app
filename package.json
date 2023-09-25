@@ -29,6 +29,7 @@
     "@ngrx/component-store": "^15.3.0",
     "@nrwl/angular": "15.2.4",
     "@solana/spl-token": "^0.3.8",
+    "@solana/wallet-adapter-backpack": "^0.1.14",
     "@solana/wallet-adapter-base": "^0.9.22",
     "@solana/wallet-adapter-phantom": "^0.9.19",
     "@solana/wallet-adapter-solflare": "^0.6.21",
